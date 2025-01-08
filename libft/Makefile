@@ -1,6 +1,6 @@
 # Compiler and Flags
-CC      = gcc
-CFLAGS  = -Wall -Wextra -Werror
+CC      = cc
+CFLAGS  = -Wall -Wextra -Werror -g
 
 # Library Name
 NAME    = libft.a
@@ -11,7 +11,7 @@ LIBFT_SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isasc
 	ft_memset.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c \
 	ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
 	ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c \
-	ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
+	ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_itoa.c
 
 # ft_printf Source Files
 PRINTF_DIR = printf
@@ -25,7 +25,7 @@ PRINTF_UTIL_SRCS = $(PRINTF_UTIL_DIR)/ft_char_format.c $(PRINTF_UTIL_DIR)/ft_str
 # Object Files
 LIBFT_OBJ = $(LIBFT_SRCS:%.c=%.o)
 PRINTF_OBJS = $(PRINTF_SRCS:$(PRINTF_DIR)/%.c=$(PRINTF_DIR)/%.o)
-PRINTF_UTIL_OBJS = $(PRINTF_UTIL_SRCS:$(PRINTF_UTIL_DIR)/%.c=$(PRINTF_UTIL_DIR)/%.o
+PRINTF_UTIL_OBJS = $(PRINTF_UTIL_SRCS:$(PRINTF_UTIL_DIR)/%.c=$(PRINTF_UTIL_DIR)/%.o)
 # Default Rule
 all: $(NAME)
 
