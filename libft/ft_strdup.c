@@ -28,3 +28,4 @@ char	*ft_strdup(const char *s1)
 	ft_memcpy(dst, s1, len);
 	return (dst);
 }
+
