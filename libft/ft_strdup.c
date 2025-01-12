@@ -6,7 +6,7 @@
 /*   By: aaljazza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 13:39:22 by aaljazza          #+#    #+#             */
-/*   Updated: 2024/09/28 13:39:30 by aaljazza         ###   ########.fr       */
+/*   Updated: 2025/01/12 10:06:33 by aaljazza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -28,4 +28,3 @@ char	*ft_strdup(const char *s1)
 	ft_memcpy(dst, s1, len);
 	return (dst);
 }
-
